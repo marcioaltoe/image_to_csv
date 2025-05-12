@@ -1,0 +1,28 @@
+[project]
+name = "image-to-csv"
+version = "0.1.0"
+description = "A tool to convert PDF and JPG files to CSV"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+dependencies = [
+    "pdf2image>=1.16.3",
+    "pytesseract>=0.3.10",
+    "Pillow>=10.0.0",
+    "pandas>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "numpy>=1.24.0",
+    "opencv-python>=4.8.0"
+]
+requires-python = ">=3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I"]
